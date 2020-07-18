@@ -47,7 +47,8 @@
 		left: 50vw;
 		transform: translateX(-50%);
 		top: 0;
-		z-index: 10000
+		z-index: 10000;
+		overflow: hidden;
 	}
 	#invit_wrap{
 		background-color: white;
@@ -219,18 +220,16 @@
 	.img_4_ani{
 		opacity: 0
 	}
-.img_5, .img_6{
-	width: 100vw !important;
-	height: auto !important;
-}
 .img_5{
 	transition: 1.3s;
 	bottom:0 !important;
 	top: auto !important
+    z-index: 1000000
 }
 .img_6{
 	transition: 1.3s;
 	top:0;
+    z-index: 1000000
 }
 	.img_5_ani{
 		opacity: 0
@@ -319,6 +318,10 @@ top: 50vh;
 z-index: 100000;
 position: absolute;
 transform: translateY(-50%);
+}
+.img_5, .img_6{
+	width: 100vw !important;
+	height: auto !important;
 }
 	#icon{
 		width: 25vw;
