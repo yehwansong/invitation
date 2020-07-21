@@ -238,6 +238,9 @@
 	top:0;
     z-index: 1000000
 }
+.drawing{
+	display: none;
+}
 	
 
 .img_4_elem_1{transition-delay: 0s;}
@@ -333,11 +336,44 @@ transform: translateY(-50%);
 		opacity: 0
 	}
 }
-
-
+.drawing{
+position: fixed;
+left: 50%;
+top: 47.5%;
+z-index: 10000000;
+transform: translateX(-50%) translateY(-50%);
+font-size: 5vw;
+text-align: center;
+line-height: 0.8;
+font-family: sans-serif;
+padding: 4vw;
+background: rgb(240, 240, 240);
+text-transform: capitalize;
+transition :0.5s ease-in-out;
+  animation: blink-animation 1s infinite;
+  -webkit-animation: blink-animation 1s infinite;
+  display: block;
+}
+@keyframes blink-animation {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink-animation {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
 </head>
 <body>
+		<div class="drawing">start drawing</div>
 	<div id="drawing_wrap">
 		<canvas id="c" width="1792" height="1018"></canvas>
 		<img id="icon" src="brush-01.png">

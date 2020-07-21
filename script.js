@@ -136,6 +136,7 @@ function angleBetween(point1, point2) {
     if(isMobile){
         jQuery('#cursor').css({'opacity':0})
         el.ontouchstart = function(e) {
+            $('.drawing').hide()
             jQuery('#cursor').css({'opacity':0})
             isDrawing = true;
             lastPoint = { x: e.touches[0].clientX, y: e.touches[0].clientY };
