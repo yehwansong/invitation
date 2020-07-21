@@ -192,6 +192,7 @@
      height: 100%;
      position: absolute;
      mix-blend-mode: multiply;
+     z-index: 100
 	}
 	.img_3_elem{
     width: 100vh;
@@ -205,6 +206,12 @@
 		opacity: 0;
 		transform:rotate(-27.5deg);
 	}
+.img_2_wrapper_under{
+	z-index: 50
+}
+.img_2_wrapper_upper{
+	z-index: 150
+}
 	.img_4_wrapper{
     	z-index: 100000;
     	position: absolute;
@@ -223,7 +230,7 @@
 .img_5{
 	transition: 1.3s;
 	bottom:0 !important;
-	top: auto !important
+	top: auto !important;
     z-index: 1000000
 }
 .img_6{
@@ -231,12 +238,7 @@
 	top:0;
     z-index: 1000000
 }
-	.img_5_ani{
-		opacity: 0
-	}
-	.img_6_ani{
-		opacity: 0
-	}
+	
 
 .img_4_elem_1{transition-delay: 0s;}
 .img_4_elem_2{transition-delay: 0.2s;}
@@ -297,7 +299,8 @@ height: 8vw;}
 .img_2_elem_26{left: 208vw;}
 .img_2_elem_27{left: 216vw;}
 .img_2_ani{
-margin-left: 250vw;}
+margin-left: 250vw;
+}
 .img_2_innerwrapper{
 	height: 14vw
 }
@@ -305,7 +308,8 @@ margin-left: 250vw;}
 transform: rotate(-44.7deg) translateY(65vw) translateX(10vw);
 }
 .img_3_wrapper{
-transform: rotate(-8.5deg) translateX(0vw) translateY(8vw)}
+transform: rotate(-8.5deg) translateX(0vw) translateY(8vw);
+z-index: 100}
 .img_3_elem {
 width: 140vw;
 position: absolute;
@@ -323,6 +327,7 @@ transform: translateY(-50%);
 	width: 100vw !important;
 	height: auto !important;
 }
+.img_6{}
 	#icon{
 		width: 25vw;
 		opacity: 0
@@ -345,7 +350,7 @@ transform: translateY(-50%);
 			<img class="img_1_elem img_1_ani img_1_elem_4" src="poster/elem_1_split.png">
 			<img class="img_1_elem img_1_ani img_1_elem_5" src="poster/elem_1_split.png">
 		</div>
-		<div class="img_2_wrapper">
+		<div class="img_2_wrapper img_2_wrapper_under">
 			<div class="img_2_innerwrapper img_2_innerwrapper_1">
 				<div class="img_2_elem img_2_elem_0 img_2_ani"></div>
 				<div class="img_2_elem img_2_elem_1 img_2_ani"></div>
@@ -378,35 +383,6 @@ transform: translateY(-50%);
 				<div class="img_2_elem img_2_elem_28 img_2_ani"></div>
 			</div>
 			<div class="img_2_innerwrapper img_2_innerwrapper_2">
-				<div class="img_2_elem img_2_elem_0 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_1 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_2 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_3 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_4 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_5 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_6 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_7 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_8 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_9 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_10 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_11 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_12 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_13 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_14 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_15 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_16 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_17 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_18 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_19 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_20 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_21 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_22 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_23 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_24 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_25 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_26 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_27 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_28 img_2_ani"></div>
 			</div>
 			<div class="img_2_innerwrapper img_2_innerwrapper_3">
 				<div class="img_2_elem img_2_elem_0 img_2_ani"></div>
@@ -440,35 +416,6 @@ transform: translateY(-50%);
 				<div class="img_2_elem img_2_elem_28 img_2_ani"></div>
 			</div>
 			<div class="img_2_innerwrapper img_2_innerwrapper_4">
-				<div class="img_2_elem img_2_elem_0 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_1 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_2 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_3 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_4 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_5 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_6 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_7 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_8 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_9 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_10 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_11 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_12 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_13 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_14 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_15 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_16 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_17 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_18 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_19 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_20 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_21 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_22 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_23 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_24 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_25 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_26 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_27 img_2_ani"></div>
-				<div class="img_2_elem img_2_elem_28 img_2_ani"></div>
 			</div>
 			<div class="img_2_innerwrapper img_2_innerwrapper_5">
 				<div class="img_2_elem img_2_elem_0 img_2_ani"></div>
@@ -500,6 +447,76 @@ transform: translateY(-50%);
 				<div class="img_2_elem img_2_elem_26 img_2_ani"></div>
 				<div class="img_2_elem img_2_elem_27 img_2_ani"></div>
 				<div class="img_2_elem img_2_elem_28 img_2_ani"></div>
+			</div>
+		</div>
+		<div class="img_2_wrapper img_2_wrapper_upper">
+			<div class="img_2_innerwrapper img_2_innerwrapper_1">
+			</div>
+			<div class="img_2_innerwrapper img_2_innerwrapper_2">
+				<div class="img_2_elem img_2_elem_0 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_1 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_2 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_3 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_4 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_5 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_6 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_7 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_8 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_9 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_10 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_11 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_12 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_13 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_14 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_15 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_16 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_17 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_18 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_19 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_20 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_21 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_22 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_23 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_24 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_25 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_26 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_27 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_28 img_2_ani"></div>
+			</div>
+			<div class="img_2_innerwrapper img_2_innerwrapper_3">
+			</div>
+			<div class="img_2_innerwrapper img_2_innerwrapper_4">
+				<div class="img_2_elem img_2_elem_0 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_1 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_2 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_3 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_4 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_5 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_6 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_7 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_8 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_9 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_10 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_11 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_12 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_13 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_14 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_15 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_16 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_17 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_18 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_19 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_20 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_21 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_22 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_23 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_24 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_25 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_26 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_27 img_2_ani"></div>
+				<div class="img_2_elem img_2_elem_28 img_2_ani"></div>
+			</div>
+			<div class="img_2_innerwrapper img_2_innerwrapper_5">
 			</div>
 		</div>
 		<div class="img_3_wrapper">

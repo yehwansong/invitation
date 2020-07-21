@@ -75,23 +75,26 @@ function img_6(){
     $('.img_6_ani').removeClass('img_6_ani')
 }
 function moving(){
-    if(moving_counter > 50 && !img_1_out){
+    if(moving_counter > 30 && !img_1_out){
         img_1()
     }
-    if(moving_counter > 150 && !img_2_out){
+    if(moving_counter > 90 && !img_2_out){
         img_2()
     }
-    if(moving_counter > 250 && !img_3_out){
+    if(moving_counter > 150 && !img_3_out){
         img_3()
     }
-    if(moving_counter > 350 && !img_4_out){
+    if(moving_counter > 210 && !img_4_out){
         img_4()
     }
-    if(moving_counter > 450 && !img_5_out && !img_6_out){
+    if(moving_counter > 270 && !img_5_out && !img_6_out){
         img_5()
-        img_6()
     }
 
+}
+if(w/h<=3/4){
+    $('.img_5').attr('src','poster/elem_5_mobile.png')
+    $('.img_6').attr('src','poster/elem_6_mobile.png')
 }
 // $(window).scroll(function (event) {
 //     var scroll = $(window).scrollTop();
@@ -169,7 +172,6 @@ function angleBetween(point1, point2) {
 
     }else{
         el.onmousedown = function(e) {
-            console.log(offleft)
             jQuery('#cursor').css({'opacity':0})
             isDrawing = true;
             lastPoint = { x: e.clientX - offleft, y: e.clientY };
@@ -179,7 +181,6 @@ function angleBetween(point1, point2) {
             x = lastPoint.x -img.width/2;
             y = lastPoint.y -img.height/2;
             ctx.drawImage(img, x, y, img.width, img.height)
-
         };
 
         el.onmousemove = function(e) {
