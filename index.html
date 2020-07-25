@@ -238,9 +238,6 @@
 	top:0;
     z-index: 1000000
 }
-.drawing{
-	display: none;
-}
 	
 
 .img_4_elem_1{transition-delay: 0s;}
@@ -249,6 +246,12 @@
 .img_4_elem_4{transition-delay: 0.6s;}
 .img_4_elem_5{transition-delay: 0s;}
 .img_4_elem_6{transition-delay: 1s;}
+
+@media (min-aspect-ratio: 3/4) {
+.drawing{
+	display: none !important;
+}
+}
 @media (max-aspect-ratio: 3/4) {
 /*maxratio*/
 #invit_wrap,#drawing_wrap{
